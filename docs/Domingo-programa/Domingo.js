@@ -101,7 +101,7 @@ const formLines = lines.join('\n');
 
   let finalMessage = '';
   if (firstSpecial) finalMessage += firstSpecial + '\n\n';
-  if (serviceDateTitle) finalMessage += `*${serviceDateTitle}*` + '\n\n';
+  if (serviceDateTitle) finalMessage += `_Programa del ${serviceDateTitle}_` + '\n\n';
   finalMessage += formLines;
   if (finalSpecial) finalMessage += '\n\n' + finalSpecial;
   
