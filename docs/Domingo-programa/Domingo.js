@@ -81,6 +81,7 @@ function buildFinalMessage(overrideFinalSpecial) {
     ? String(overrideFinalSpecial).trim()
     : vals.whatsappMessage.trim();
 
+  msg.push(`*CULTO DOMINICAL*`);
   const serviceDateFormatted = formatDateToSpanish(vals.serviceDate);
   const serviceDateTitle = formatDateToSpanishTitle(vals.serviceDate);
 
