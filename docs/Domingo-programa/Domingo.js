@@ -28,6 +28,7 @@ function getFormValues() {
     parqueo: document.getElementById('parqueo')?.value || '',
     bocadillos: document.getElementById('bocadillos')?.value || '',
     recordatorio: document.getElementById('recordatorioMessage')?.value || '',
+    limpieza: document.getElementById('limpieza')?.valeu || '',
     whatsappMessage: document.getElementById('whatsappMessage')?.value || ''
   };
 }
@@ -94,6 +95,7 @@ if (vals.mensaje)  lines.push(`*Mensaje:* ${vals.mensaje}`);
 if (vals.puerta)   lines.push(`*Puerta:* ${vals.puerta}`);
 if (vals.parqueo)  lines.push(`*Parqueo:* ${vals.parqueo}`);
 if (vals.bocadillos) lines.push(`*Bocadillos:* ${vals.bocadillos}`);
+if (vals.limpieza) lines.push(`*Limpieza:* ${vals.limpieza}`);
 
 const formLines = lines.join('\n');
 
