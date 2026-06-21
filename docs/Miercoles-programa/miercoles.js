@@ -33,7 +33,7 @@ function buildFinalMessage() {
   // TÍTULO 
   // ===============================
   msg.push(`*CULTO DE ORACIÓN*`);
-  msg.push(`Programa del Dia ${fecha}_`);
+  msg.push(`_Programa del Dia ${fecha}_`);
   msg.push("");
 
   // ===============================
