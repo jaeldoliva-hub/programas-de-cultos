@@ -28,7 +28,7 @@ function getFormValues() {
     parqueo: document.getElementById('parqueo')?.value || '',
     bocadillos: document.getElementById('bocadillos')?.value || '',
     recordatorio: document.getElementById('recordatorioMessage')?.value || '',
-    limpieza: document.getElementById('limpieza')?.valeu || '',
+    limpieza: document.getElementById('limpieza')?.value || '',
     whatsappMessage: document.getElementById('whatsappMessage')?.value || ''
   };
 }
@@ -81,7 +81,7 @@ function buildFinalMessage(overrideFinalSpecial) {
     ? String(overrideFinalSpecial).trim()
     : vals.whatsappMessage.trim();
 
-  msg.push(`*CULTO DOMINICAL*`);
+  let finalMessage = '*CULTO DOMINICAL*\n\n';
   const serviceDateFormatted = formatDateToSpanish(vals.serviceDate);
   const serviceDateTitle = formatDateToSpanishTitle(vals.serviceDate);
 
