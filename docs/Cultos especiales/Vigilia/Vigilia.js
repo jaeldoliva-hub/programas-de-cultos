@@ -125,7 +125,6 @@ function buildFinalMessage() {
     p2.push(`_(Testimonios de agradecimiento, alabanzas o palabras de motivación)_`);
   participaciones2.forEach((p, i) => p2.push(`${i + 1}. ${p}`));
 
-p2.push(`*Alabanzas de adoración:* ${adoracion}`);
 const mensaje2 = getValue('mensaje2');
 p2.push(`*Mensaje:* ${mensaje2}`);
 
